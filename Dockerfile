@@ -11,7 +11,8 @@ RUN apt-get update && \
 COPY package.json .
 
 RUN npm install
-RUN npm install y
+RUN npm install yt-search@latets
+
 COPY . .
 
 CMD ["node", "."]
